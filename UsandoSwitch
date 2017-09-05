@@ -1,0 +1,70 @@
+
+import java.util.Scanner;
+
+
+public class UsandoSwitch {
+
+    public static void main(String[] args) {
+        //entrada
+        
+        Scanner entrada = new Scanner( System.in );
+        System.out.println("Digite um numero de 0 a 9");
+        int num = entrada.nextInt();
+        String numeroEntenso = "";
+        
+            
+       //processamnto
+       switch ( num ){
+           case 0:
+               numeroEntenso = "zero";
+               break;
+               
+               case 1:
+               numeroEntenso = "Um";
+               break;
+               
+               case 2:
+               numeroEntenso = "Dois";
+               break;
+               
+               case 3:
+               numeroEntenso = "Três";
+               break;
+               
+               case 4:
+               numeroEntenso = "Quatro";
+               break;
+               
+               case 5:
+               numeroEntenso = "Cinco";
+               break;
+               
+               case 6:
+               numeroEntenso = "Seis";
+               break;
+               
+               case 7:
+               numeroEntenso = "Sete";
+               break;
+               
+               case 8:
+               numeroEntenso = "Oito";
+               break;
+               
+               case 9:
+               numeroEntenso = "Nove";
+               break;
+               
+               default:
+                   numeroEntenso = "valor não suportado";
+                   
+               
+       }
+       
+        System.out.println("O numero digitado é : " + numeroEntenso);
+       
+       
+       
+    }
+    
+}
