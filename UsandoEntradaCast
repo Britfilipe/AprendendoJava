@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class UsandoEntradaCast {
+
+
+    public static void main(String[] args) {
+        
+        //Entrada
+        Scanner entrada = new Scanner( System.in );
+        
+        System.out.println(" Informe seu ano de Nascimento: ");
+        int anoNascimento = entrada.nextInt();
+        System.out.println("Informe o ano Atual: ");
+        int anoAtual = entrada.nextInt();
+        System.out.println("Digite seu Peso: ");
+        double peso = entrada.nextDouble();
+        System.out.println("Informe a sua Altura: ");
+        double altura = entrada.nextDouble();
+        
+                
+        
+           
+        //Processamento
+        int idade = anoAtual - anoNascimento;
+        double imc = peso / (altura * altura);
+        //Saida
+        
+        System.out.println("Sua idade é: " + idade);
+        System.out.println("Seu imc é " + imc);
+        
+        
+    }
+    
+}
