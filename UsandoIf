@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class UsandoIf {
+
+    public static void main(String[] args) {
+        
+        //Entrada
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Informe seu consumo de Kw");
+        double valorKw = 0.72;
+        int consumoKw = entrada.nextInt();
+        double valorPago = 0;
+               
+
+        
+        // && (AND) E
+        
+        // || (OR) OU
+        
+        //Processamento
+        if (consumoKw == 0 ){
+            System.out.println("Você não consumiu energia esse Mês");
+        
+        }else if (consumoKw < 0 || consumoKw >= 1000 ){
+            System.out.println("Erro valor não pode ser negativo ou maiores que mil");
+        
+        }else if (consumoKw > 0 && consumoKw < 10 ){
+           
+            valorPago = consumoKw * 0.5; 
+            
+        } else if ( consumoKw > 10 && consumoKw < 100){
+            
+            valorPago = consumoKw * 0.72;
+                    
+        } else if (consumoKw >= 100){
+            
+            valorPago = consumoKw * 1;        
+        
+        }
+        
+        
+        //Saida
+        System.out.println("Valor consumido: " + valorPago);
+
+    }
+    
+}
